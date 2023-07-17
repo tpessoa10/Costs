@@ -7,6 +7,7 @@ import Footer from './components/layout/Footer';
 
 import Container from './components/layout/Container';
 import Projects from './components/pages/Projects';
+import NewProject from './components/pages/NewProject';
  
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/company' element={<Company/>}></Route>
           <Route exact path='/contact' element={<Contact/>}></Route>
           <Route exact path='/projects' element={<Projects/>}></Route>
+          <Route exact path='/newproject' element={<NewProject/>}></Route>
         </Routes>
         </Container>
         <Footer/>
