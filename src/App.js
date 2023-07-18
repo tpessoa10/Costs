@@ -8,6 +8,7 @@ import Footer from './components/layout/Footer';
 import Container from './components/layout/Container';
 import Projects from './components/pages/Projects';
 import NewProject from './components/pages/NewProject';
+import styles from './components/layout/Container.modules.css'
  
 function App() {
   return (
