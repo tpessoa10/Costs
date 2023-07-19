@@ -8,13 +8,13 @@ import Footer from './components/layout/Footer';
 import Container from './components/layout/Container';
 import Projects from './components/pages/Projects';
 import NewProject from './components/pages/NewProject';
-import styles from './components/layout/Container.modules.css'
+import styles from './components/layout/Container.module.css'
  
 function App() {
   return (
     <Router>
     <Navbar/>
-      <Container className="minHeight">
+      <Container customClass="minHeight">
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
           <Route exact path='/company' element={<Company/>}></Route>
