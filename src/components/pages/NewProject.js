@@ -20,8 +20,8 @@ function NewProject(){
         }).then(resp => resp.json())
         .then((data) => {
             console.log(data)
-            //redirect
-            histoy('/projects', {message:"Projeto criado com sucesso"})
+            //redirectm 
+            histoy('/projects', {state:{message:"Projeto criado com sucesso"}})
         })
         .catch(err => console.log(err))
     }
