@@ -4,6 +4,7 @@ import Company from './components/pages/Company';
 import Contact from './components/pages/Contact';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer';
+import Project from './components/pages/Project';
 
 import Container from './components/layout/Container';
 import Projects from './components/pages/Projects';
@@ -16,11 +17,12 @@ function App() {
     <Navbar/>
       <Container customClass="minHeight">
         <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/company' element={<Company/>}></Route>
-          <Route exact path='/contact' element={<Contact/>}></Route>
-          <Route exact path='/projects' element={<Projects/>}></Route>
-          <Route exact path='/newproject' element={<NewProject/>}></Route>
+          <Route  exact path='/' element={<Home/>}></Route>
+          <Route  path='/company' element={<Company/>}></Route>
+          <Route  path='/contact' element={<Contact/>}></Route>
+          <Route  path='/projects' element={<Projects/>}></Route>
+          <Route  path='/newproject' element={<NewProject/>}></Route>
+          <Route  path='/project/:id' element={<Project/>}></Route>
         </Routes>
         </Container>
         <Footer/>
