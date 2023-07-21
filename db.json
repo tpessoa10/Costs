@@ -1,6 +1,8 @@
 {
   "projects": [
     {
+      "name": "Teste",
+      "budget": "1500",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -8,113 +10,12 @@
       "cost": 0,
       "service": [],
       "id": 1
-    },
-    {
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "service": [],
-      "name": "0",
-      "id": 2
-    },
-    {
-      "name": "1",
-      "cost": 0,
-      "service": [],
-      "id": 3
-    },
-    {
-      "name": "1122",
-      "cost": 0,
-      "service": [],
-      "id": 4
-    },
-    {
-      "name": "1111",
-      "cost": 0,
-      "service": [],
-      "id": 5
-    },
-    {
-      "name": "10000000",
-      "cost": 0,
-      "service": [],
-      "id": 6
-    },
-    {
-      "name": "10000000",
-      "cost": 0,
-      "service": [],
-      "id": 7
-    },
-    {
-      "name": "10000000",
-      "cost": 0,
-      "service": [],
-      "id": 8
-    },
-    {
-      "name": "11111",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 9
-    },
-    {
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "name": "1000",
-      "cost": 0,
-      "service": [],
-      "id": 10
-    },
-    {
-      "cost": 0,
-      "service": [],
-      "id": 11
-    },
-    {
-      "name": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "service": [],
-      "id": 12
-    },
-    {
-      "cost": 0,
-      "service": [],
-      "id": 13
-    },
-    {
-      "cost": 0,
-      "service": [],
-      "id": 14
-    },
-    {
-      "cost": 0,
-      "service": [],
-      "id": 15
-    },
-    {
-      "cost": 0,
-      "service": [],
-      "id": 16
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "infra"
+      "name": "Infra"
     },
     {
       "id": 2,

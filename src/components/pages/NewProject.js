@@ -4,7 +4,7 @@ import styles from './NewProject.module.css'
 
 function NewProject(){
 
-    const histoy = useNavigate()
+    const history = useNavigate()
 
     function createPost(project){
         //initialize cost and service
@@ -21,7 +21,7 @@ function NewProject(){
         .then((data) => {
             console.log(data)
             //redirectm 
-            histoy('/projects', {state:{message:"Projeto criado com sucesso"}})
+            history('/projects', {state:{message:"Projeto criado com sucesso"}})
         })
         .catch(err => console.log(err))
     }
