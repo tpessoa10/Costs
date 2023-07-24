@@ -34,13 +34,13 @@ function Project(){
         {project.name ? (
             <div className={styles.project_details}>
                 <Container customClass="column">
-                    <div>
+                    <div className={styles.details_container}>
                         <h1>Projeto:{project.name}</h1>
-                        <button onClick={toggleProjectForm}>
+                        <button onClick={toggleProjectForm} className={styles.btn}>
                             {!showProjectForm ? 'Editar projeto' : 'Fechar'}
                         </button>
                         {!showProjectForm ? (
-                            <div>
+                            <div className={styles.project_info}>
                                 <p><span>Categoria:</span>R${project.category.name}</p>
                                 <p><span>Total de orçamento:</span>R${project.budget}</p>
                                 <p><span>Total utilizado:</span>R${project.cost}</p>
@@ -48,7 +48,7 @@ function Project(){
                             </div>
                             
                         ) : (
-                            <div><p>Detalhes do projeto</p></div>
+                            <div className={styles.project_info}><p>form</p></div>
                         )}
                     </div>
                 </Container>
