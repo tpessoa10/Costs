@@ -5,6 +5,8 @@ import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
+import ServiceForm from '../service/ServiceForm'
+import {parse, v4 as uuidv4} from 'uuid'
 
 function Project(){
     const {id} = useParams()
@@ -12,6 +14,7 @@ function Project(){
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false) 
     const [showServiceForm, setShowServiceForm] = useState(false) 
+    const [services, setServices] = useState([])
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -29,6 +32,23 @@ function Project(){
         .catch((err) => console.log(err))
         }, 200)
     }, [id])
+
+    function createService(project){
+        //last service
+        const lastService = project.service[project.service.length - 1]
+        lastService.id = uuidv4()
+
+        const lastServiceCost = lastService.cost
+        const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+
+        //maxium value validation 
+        if(newCost > parseFloat(project.budget)){
+            setMessage('Orçamento ultrapassado, verifique o valor do serviço')
+            setType('error')
+            project.service.pop()
+            return false
+        }
+    }
 
     function toggleProjectForm(){
         setShowProjectForm(!showProjectForm)
@@ -95,7 +115,9 @@ function Project(){
                                 {!showServiceForm ? 'Adicionar serviço' : 'Fechar'} 
                             </button>
                     <div className={styles.project_info}>
-                        {showServiceForm && <div>Formulário do serviço</div>}
+                        {showServiceForm && (
+                            <ServiceForm handleSubmit={createService} btnText='Adicionar serviço' projectData={project}/>
+                        )}
                         </div>
                     </div>
                     <h2>Serviços</h2>
