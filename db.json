@@ -29,8 +29,15 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "service": [],
+      "cost": 1,
+      "service": [
+        {
+          "name": "dfdf",
+          "cost": "1",
+          "description": "sfdsfdsdf",
+          "id": "af0326ba-206d-474b-8aad-b7fba4abec2f"
+        }
+      ],
       "id": 3
     }
   ],
