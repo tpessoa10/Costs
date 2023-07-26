@@ -7,21 +7,8 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 150,
-      "service": [
-        {
-          "name": "teste",
-          "cost": "100",
-          "description": "Descricao",
-          "id": "d3709d7f-d741-4305-8639-36612a5f96f1"
-        },
-        {
-          "name": "testesas",
-          "cost": "50",
-          "description": "sim",
-          "id": "a8107040-1655-4da4-b4ee-51fcd464550c"
-        }
-      ],
+      "cost": 0,
+      "service": [],
       "id": 1
     },
     {
