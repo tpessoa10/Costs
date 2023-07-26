@@ -7,8 +7,21 @@
         "id": "1",
         "name": "Infra"
       },
-      "cost": 0,
-      "service": [],
+      "cost": 150,
+      "service": [
+        {
+          "name": "teste",
+          "cost": "100",
+          "description": "Descricao",
+          "id": "d3709d7f-d741-4305-8639-36612a5f96f1"
+        },
+        {
+          "name": "testesas",
+          "cost": "50",
+          "description": "sim",
+          "id": "a8107040-1655-4da4-b4ee-51fcd464550c"
+        }
+      ],
       "id": 1
     },
     {
@@ -29,13 +42,25 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 1,
+      "cost": 10098,
       "service": [
         {
           "name": "dfdf",
           "cost": "1",
           "description": "sfdsfdsdf",
           "id": "af0326ba-206d-474b-8aad-b7fba4abec2f"
+        },
+        {
+          "name": "dfdfasa",
+          "cost": "100",
+          "description": "sfdsfdsdf",
+          "id": "97cb62b4-64f4-40d9-b7b5-eb0458ab1d2a"
+        },
+        {
+          "name": "aaaaaaaaaaa",
+          "cost": "9997",
+          "description": "Sasasasasa",
+          "id": "e58cdd8b-afd6-487a-bdaa-3bdd04d32467"
         }
       ],
       "id": 3
